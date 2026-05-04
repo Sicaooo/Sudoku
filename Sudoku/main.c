@@ -308,7 +308,8 @@ int get_initial_count(void) {
 			count += game.nums[idx(j, i)] != ' ';
 		}
 	}
-	
+
+	game.nums_left -= count;
 	return count;
 }
 
